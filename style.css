@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat%7CRoboto&display=swap');
 * {
     box-sizing: border-box; margin: 0; padding: 0;
 }
@@ -142,7 +143,7 @@ h4
   {
     font-size: 2.5em;
     font-weight: bold;
-    font-family: RooneySans, Avenir-Book, Calibri, sans-serif;
+    font-family: Roboto, sans-serif;
     line-height: 1.2em;
     margin-bottom: .25em;
     }
@@ -150,7 +151,7 @@ h4
 .typography-section h2 {
     font-size: 1.5em;
     font-weight: normal;
-    font-family: RooneySans, Avenir-Book, Calibri, sans-serif;
+    font-family: Montserrat, sans-serif;
     line-height: 1.35em;    
     margin-bottom: 1.5rem;
     }
@@ -172,292 +173,30 @@ h4
       max-width: 30em;
 }
 
-  .button-block {
-    display: block;
-    margin: 0 0 2em;
-  }
-  .button {
-    display: inline-block;
-    background: #179287;
-    text-shadow: 0 1px 1px darken(#179287,5%);
-    border: 1px solid darken(#179287,5%);
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 0 1em;
-    height: 50px;
-    line-height: 48px;
-    border-radius: 3px;
-    box-shadow: inset 0 -1px 0 0 darken(#179287,5%), 0 0 0 3px #179287;
-    cursor: pointer;
-    margin-bottom: .5em;
-  }
-  
-    button:hover {
-      border-color: darken(#179287,10%);
-      text-shadow: 0 1px 1px darken(#179287,10%);
-      box-shadow: inset 0 -1px 0 0 darken(#179287,10%), 0 0 0 3px darken(#179287,5%);
-    }
-   
-  
-    .secondary {
-      background: #179287;
-      color: white;
-      text-shadow: 0 1px 0 white;
-      border: 1px solid darken(#179287,10%);
-      box-shadow: inset 0 -1px 0 0 darken(#179287,10%), 0 0 0 3px #179287;
-    }
-  
-    .secondary:hover {
-        border-color: darken(#179287,20%);
-        box-shadow: inset 0 -1px 0 0 darken(#179287,20%), 0 0 0 3px darken(#179287,2%);
-      }
-  
-    
-    .small {
-      height: 40px;
-      line-height: 38px;
-      font-size: 14px;
-    }
-
-    .inline-button {
-      margin-right: .5em;
-      vertical-align: top;
-    }
-  
+.btn{
+  background-color : #179287;
+}
 
 
-    .forms-section h3 {
 
-        font-size: 1.5em;
-        font-weight: bold;
-        font-family: RooneySans, Avenir-Book, Calibri, sans-serif;
-        font-style: normal;
-          line-height: 1.35em;
-          color: #424242;
-          padding: 0 0 .5em;
-          margin: 0 0 .5em;
-          border-bottom: 1px dotted #EAEAEA;
-        }
-        
-        .forms-section form {
-          background: #FAFAFA;
-          padding: 2em 2em 1em;
-          border-radius: 3px;
-          border: 1px solid #EAEAEA;
-        }
-      
-       form h3 {
-        font-size: 1.5em;
-        font-weight: bold;
-        font-family: RooneySans, Avenir-Book, Calibri, sans-serif;
-        font-style: normal;
-          line-height: 1.35em;
-          color: #424242;
-          padding: 0 0 .25em;
-          margin: 0 0 1em;
-          border-bottom: 1px dotted #EAEAEA;
-        }
-        .input-holder {
-          display: block;
-          position: relative;
-          padding-bottom: 1em;
-        }
-        .helper-text {
-          display: block;
-          position: absolute;
-          top: 22px;
-          left: 52%;
-          vertical-align: top;
-          padding: 10px 0;
-          border-radius: 3px;
-          font-size: .875em;
-          color: #777777;
-          font-style: italic;
-          border: 1px solid #FAFAFA;
-        }
-        .error .helper-text {
-          color: #424242;
-          background: #FFF8DC;
-          padding: 10px;
-          border: 1px solid #E5DEC5;
-        }
-        .error .helper-text:after {
-          content: " ";
-          display: block;
-          position: absolute;
-          top: 10px;
-          left: -15px;
-          width: 0;
-          height: 0;
-          border-left: 8px solid transparent;
-          border-top: 8px solid transparent;
-          border-bottom: 8px solid transparent;
-          border-right: 8px solid #FFF8DC;
-        }
-        .error .helper-text:before {
-          content: " ";
-          display: block;
-          position: absolute;
-          left: -16px;
-          top: 10px;
-          width: 0;
-          height: 0;
-          border-left: 8px solid transparent;
-          border-top: 8px solid transparent;
-          border-bottom: 8px solid transparent;
-          border-right: 8px solid #E5DEC5;
-        }
-        label {
-          display: block;
-          font-size: .875em;
-          margin-bottom: .25em;
-          cursor: pointer;
-        }
-        .error label {
-          color: #AE5757;
-        }
-        input, textarea, select {
-          border: 1px solid darken(#EAEAEA,10%);
-          width: 50%;
-          display: block;
-          border-radius: 3px;
-          margin: 0 .5em 0 0;
-          font-family: $sans;
-          font-size: 16px;
-          line-height: 1.4;
-          padding: 0 .75em;
-          overflow: auto;
-          background: $white;
-          outline: none;
-          box-shadow: inset 0 2px 0 0 #f6f6f6;
-      
-          &:focus {
-            border-color: #179287;
-            box-shadow: 0 0 0 3px #f6f6f6;
-          }
-        }
-      
-        .error input, .error textarea {
-          border-color: lighten(#AE5757,20%);
-        }
-      
-        textarea {
-          height: 8.25em;
-          padding: .5em .75em;
-          line-height: 1.25;
-        }
-      
-          select {
-          -webkit-appearance: none; 
-          -moz-appearance: none; 
-          appearance: none;
-          height: 40px;
-          line-height: 38px;
-          position: relative;
-          }
-      
-          .select-holder {
-            position: relative;
-          }
-          .select-holder:after {
-            content: "";
-            position: absolute;
-            left: 47%;
-            top: 2.5em;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 6.9px 4px 0 4px;
-            border-color: #777777 transparent transparent transparent;      
-          }
-        
-        .radio input {
-          border: 0;
-          clip: rect(0 0 0 0);
-          height: 1px;
-          margin: -1px;
-          overflow: hidden;
-          padding: 0;
-          position: absolute;
-          width: 1px;
-      
-        }
-      
-        /* style the "fake" radios */
-      
-        .radio-value {
-          background-color: #fff;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: 95% auto;
-          border: 1px solid darken(#EAEAEA,10%);
-          border-radius: 50%;
-          box-shadow: inset 0 1px 0 1px #f6f6f6;
-          display: inline-block;
-          height: 1em;
-          margin: 0 .25em 1em 0;
-          position: relative;
-          vertical-align: -1.15em;
-          width: 1em;
-        }
-      
-        input:checked + .radio-value {
-          background-color: #179287 ;
-          border-color: darken(#EAEAEA,20%);
-          box-shadow: inset 0 0 0 3px #fff, 0 0 0 2px #f6f6f6;
-        }  
-        .checkbox-holder {
-          display: block;
-          margin-bottom: 1em;
-      
-          & label {
-            display: inline-block;
-          }
-        }
-        label>input[type="checkbox"] {
-          display: none;
-        }
-        label>input[type="checkbox"]+span {
-          cursor: pointer;
-          position: relative;
-          display: inline-block;
-          width: auto;
-          color: #424242;
-        }
-        label>input[type="checkbox"]+span:before {
-          content: '';
-          display: inline-block;
-          height: 1em;
-          width: 1em;
-          margin-right: .25em;
-          color: #179287;
-          background: #fff;
-          border-radius: 2px;
-          border: 1px solid darken(#EAEAEA,10%);
-          vertical-align: -.15em;
-          box-shadow: inset 0 1px 0 1px #f6f6f6;
-      
-        }
-        label>input[type="checkbox"]:checked+span:before {
-          border-color: darken(#EAEAEA,20%);
-          box-shadow: inset 0 0 0 3px #fff, 0 0 0 2px #f6f6f6;
-      
-        } 
-        label>input[type="checkbox"]:checked+span:after {
-          content: '';
-          width: 9px;
-          height: 4px;
-          position: absolute;
-          top: 2px;
-          left: 3px;
-          border: 4px solid #179287;
-          border-top: none;
-          border-right: none;
-          background: transparent;
-          transform: rotate(-45deg);
-        }
-        label span {
-          color: #777777;
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
